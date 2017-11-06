@@ -12,9 +12,11 @@
 		0F22E1B41E8407D1004B722A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F22E1B21E8407D1004B722A /* Main.storyboard */; };
 		0F22E1B61E8407D1004B722A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F22E1B51E8407D1004B722A /* Assets.xcassets */; };
 		0F22E1B91E8407D1004B722A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F22E1B71E8407D1004B722A /* LaunchScreen.storyboard */; };
+		3F85549D1FB0411200BBB962 /* Opinion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85549C1FB0411200BBB962 /* Opinion.swift */; };
+		3F85549F1FB0412D00BBB962 /* QuestionOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F85549E1FB0412D00BBB962 /* QuestionOfTheDay.swift */; };
+		3F8554A11FB0416200BBB962 /* Statistician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8554A01FB0416200BBB962 /* Statistician.swift */; };
 		DEC25D441FA7847A000D816E /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC25D431FA7847A000D816E /* VoteViewController.swift */; };
 		DEC25D461FA7848C000D816E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC25D451FA7848C000D816E /* StatisticsViewController.swift */; };
-		DEC25D481FA784D8000D816E /* OtherClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC25D471FA784D8000D816E /* OtherClasses.swift */; };
 		FB86633BC42CE4C4E2F4BF7D /* Pods_QuestionOfTheDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E314E8FDEA0A05DB832318 /* Pods_QuestionOfTheDay.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,11 +28,13 @@
 		0F22E1B51E8407D1004B722A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F22E1B81E8407D1004B722A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F22E1BA1E8407D1004B722A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F85549C1FB0411200BBB962 /* Opinion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opinion.swift; sourceTree = "<group>"; };
+		3F85549E1FB0412D00BBB962 /* QuestionOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOfTheDay.swift; sourceTree = "<group>"; };
+		3F8554A01FB0416200BBB962 /* Statistician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistician.swift; sourceTree = "<group>"; };
 		6042A8B57992FAE32494E3C2 /* Pods-QuestionOfTheDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionOfTheDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionOfTheDay/Pods-QuestionOfTheDay.release.xcconfig"; sourceTree = "<group>"; };
 		C1E314E8FDEA0A05DB832318 /* Pods_QuestionOfTheDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestionOfTheDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC25D431FA7847A000D816E /* VoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
 		DEC25D451FA7848C000D816E /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
-		DEC25D471FA784D8000D816E /* OtherClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherClasses.swift; sourceTree = "<group>"; };
 		FAF349628D74999AD67993D5 /* Pods-QuestionOfTheDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestionOfTheDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestionOfTheDay/Pods-QuestionOfTheDay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +79,9 @@
 				0F22E1BA1E8407D1004B722A /* Info.plist */,
 				DEC25D431FA7847A000D816E /* VoteViewController.swift */,
 				DEC25D451FA7848C000D816E /* StatisticsViewController.swift */,
-				DEC25D471FA784D8000D816E /* OtherClasses.swift */,
+				3F85549C1FB0411200BBB962 /* Opinion.swift */,
+				3F85549E1FB0412D00BBB962 /* QuestionOfTheDay.swift */,
+				3F8554A01FB0416200BBB962 /* Statistician.swift */,
 			);
 			path = QuestionOfTheDay;
 			sourceTree = "<group>";
@@ -224,10 +230,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEC25D441FA7847A000D816E /* VoteViewController.swift in Sources */,
+				3F85549F1FB0412D00BBB962 /* QuestionOfTheDay.swift in Sources */,
 				0F22E1B11E8407D1004B722A /* ViewController.swift in Sources */,
+				3F85549D1FB0411200BBB962 /* Opinion.swift in Sources */,
+				3F8554A11FB0416200BBB962 /* Statistician.swift in Sources */,
 				0F22E1AF1E8407D1004B722A /* AppDelegate.swift in Sources */,
 				DEC25D461FA7848C000D816E /* StatisticsViewController.swift in Sources */,
-				DEC25D481FA784D8000D816E /* OtherClasses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

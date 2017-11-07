@@ -7,6 +7,7 @@
 
 import Foundation
 
+@objcMembers
 class Opinion : NSObject {
     var question:QuestionOfTheDay
     var answer:Int

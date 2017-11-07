@@ -7,6 +7,7 @@
 
 import Foundation
 
+@objcMembers
 class QuestionOfTheDay : NSObject {
     var objectId:String?
     var question:String?

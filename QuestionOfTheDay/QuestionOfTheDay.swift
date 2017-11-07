@@ -16,6 +16,9 @@ class QuestionOfTheDay : NSObject {
     var create:NSDate?
     var update:NSDate?
     
+    override init(){
+        super.init()
+    }
     init(question:String, answer0:String, answer1:String, answer2:String){
         self.question = question
         self.answer0 = answer0

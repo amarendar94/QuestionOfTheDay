@@ -15,17 +15,19 @@ class Statistician{
     var dataStoreQuestionOfTheDay:IDataStore!
     var dataStoreOpinion:IDataStore!
     
-    func findPercentage(answer:Int)->Double{
-        return 0.0
+    func findPercentage(answer:Int)->[Double]{
+        return [0,1,2]
     }
     
-   func fetchQuestionOfTheDay()->QuestionOfTheDay{
-    return dataStoreQuestionOfTheDay! as! QuestionOfTheDay
+   func fetchQuestionOfTheDay()-> QuestionOfTheDay{
+    let queryBuilder = DataQueryBuilder()
+    let question = self.dataStoreQuestionOfTheDay?.find(queryBuilder) as! QuestionOfTheDay
+    return question
   }
    
-//    func saveOpinion(opinion:Opinion){
-//        //save openion to backendless
-//    }
+    func saveOpinion(opinion:Opinion){
+       //save opinion to backendless
+    }
     
     init(){
         dataStoreQuestionOfTheDay = backendless.data.of(QuestionOfTheDay.ofClass())

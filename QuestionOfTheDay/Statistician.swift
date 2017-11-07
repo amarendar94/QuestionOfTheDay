@@ -19,10 +19,10 @@ class Statistician{
         return 0.0
     }
     
-//    func fetchQuestionOfTheDay()->QuestionOfTheDay{
-//        return dataStoreQuestionOfTheDay!
-//    }
-//    
+   func fetchQuestionOfTheDay()->QuestionOfTheDay{
+    return dataStoreQuestionOfTheDay! as! QuestionOfTheDay
+  }
+   
 //    func saveOpinion(opinion:Opinion){
 //        //save openion to backendless
 //    }

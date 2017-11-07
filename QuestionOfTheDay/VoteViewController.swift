@@ -9,6 +9,18 @@ import UIKit
 
 class VoteViewController: UIViewController {
 
+    @IBAction func voteOpinionA(_ sender: Any) {
+       // Statistician.saveOpinion(Opinion(question:QuestionOfTheDay(), answer:1))
+    }
+    
+    @IBAction func voteOpinionB(_ sender: Any) {
+      //  Statistician.saveOpinion(Opinion(answer:1))
+    }
+    
+    @IBAction func voteOpinionC(_ sender: Any) {
+       // Statistician.saveOpinion(Opinion(answer:1))
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -132,14 +132,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJm-ax-hyC">
                                 <rect key="frame" x="295" y="214" width="30" height="30"/>
                                 <state key="normal" title="A"/>
+                                <connections>
+                                    <action selector="voteOpinionA:" destination="LMG-gw-mTF" eventType="touchUpInside" id="qfb-a0-VjE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-23-l30">
                                 <rect key="frame" x="295" y="268" width="30" height="30"/>
                                 <state key="normal" title="B"/>
+                                <connections>
+                                    <action selector="voteOpinionB:" destination="LMG-gw-mTF" eventType="touchUpInside" id="Gt1-vN-Pih"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aap-Ni-fqg">
                                 <rect key="frame" x="295" y="321" width="30" height="30"/>
                                 <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="voteOpinionC:" destination="LMG-gw-mTF" eventType="touchUpInside" id="7yN-Nk-5nV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

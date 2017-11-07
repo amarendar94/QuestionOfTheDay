@@ -15,7 +15,7 @@ class Statistician{
     var dataStoreQuestionOfTheDay:IDataStore!
     var dataStoreOpinion:IDataStore!
     
-    func findPercentage(answer:Int)->[Double]{
+    func findPercentage()->[Double]{
         
         let opinions = dataStoreOpinion?.find() as! [Opinion]
         var ans0:Int = 0

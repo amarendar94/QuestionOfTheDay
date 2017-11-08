@@ -18,8 +18,12 @@ class Statistician{
     var dataStoreOpinion:IDataStore!
     
     func findPercentage()->[Double]{
+       // let queryBuilder = DataQueryBuilder()
+        //let opinions = self.dataStoreOpinion?.find(queryBuilder) as! [Opinion]
+        //let opinions = dataStoreOpinion?.find() as! [Opinion]
         
-        let opinions = dataStoreOpinion?.find() as! [Opinion]
+        let opinions:[Opinion] = getAllOpinions()
+        
         var ans0:Int = 0
         var ans1:Int = 0
         var ans2:Int = 0
@@ -47,6 +51,27 @@ class Statistician{
     func saveOpinion(opinion:Opinion){
        //let opinion = Opinion(question: QuestionOfTheDay, answer: Int)
         dataStoreOpinion.save(opinion)
+        
+//        dataStoreOpinion = backendless.data.of(Opinion.ofClass())
+//        _ = dataStoreOpinion?.save(Opinion()) as! Opinion
+    }
+    
+    func getAllOpinions() ->[Opinion]{
+        dataStoreOpinion = backendless.data.of(Opinion.ofClass())
+        let totalOpinions = dataStoreOpinion?.getObjectCount() as! Int
+        let pageSize = 10
+        let queryBuilder = DataQueryBuilder()
+        var totalOpinionsFetched = 0
+        var EveryOpinion:[Opinion] = []
+        queryBuilder!.setPageSize(Int32(pageSize)).setOffset(0)
+        
+        while totalOpinionsFetched < totalOpinions {
+            let Opinion = self.dataStoreOpinion?.find(queryBuilder) as! [Opinion]
+            EveryOpinion += Opinion
+            totalOpinionsFetched += Opinion.count
+            queryBuilder!.prepareNextPage()
+        }
+        return EveryOpinion
     }
     
     init(){

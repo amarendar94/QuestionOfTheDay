@@ -29,9 +29,9 @@ class StatisticsViewController: UIViewController {
         sOption1.text = question.answer0
         sOption2.text = question.answer1
         sOption3.text = question.answer2
-        option1percentage.text = "\(stat.findPercentage()[0])"
-        option1percentage.text = "\(stat.findPercentage()[1])"
-        option1percentage.text = "\(stat.findPercentage()[2])"
+        option1percentage.text = "\(stat.findPercentage()[0])%"
+        option2percentage.text = "\(stat.findPercentage()[1])%"
+        option3percentage.text = "\(stat.findPercentage()[2])%"
         // Do any additional setup after loading the view.
     }
 

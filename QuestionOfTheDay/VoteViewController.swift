@@ -18,17 +18,17 @@ class VoteViewController: UIViewController {
     @IBOutlet weak var option3LBL: UILabel!
     
     @IBAction func voteOpinionA(_ sender: Any) {
-        stat.saveOpinion(opinion: Opinion(question:question, answer:0))
+        stat.saveOpinion(opinion: Opinion(answer:0))
     }
     
     @IBAction func voteOpinionB(_ sender: Any) {
       //  Statistician.saveOpinion(Opinion(answer:1))
-        stat.saveOpinion(opinion: Opinion(question:question, answer:1))
+        stat.saveOpinion(opinion: Opinion(answer:1))
     }
     
     @IBAction func voteOpinionC(_ sender: Any) {
        // Statistician.saveOpinion(Opinion(answer:1))
-        stat.saveOpinion(opinion: Opinion(question:question, answer:2))
+        stat.saveOpinion(opinion: Opinion(answer:2))
     }
     
     override func viewDidLoad() {

@@ -7,11 +7,13 @@
 
 import Foundation
 
-
 class Statistician{
-    
-    
+    let APPLICATION_ID = "725BB9F7-FA70-04B2-FFDF-E12DCD979E00"
+    let API_KEY = "8CDE0FB5-FC47-CA25-FFF8-15AB3E6D2A00"
+    let SERVER_URL = "https://api.backendless.com"
     let backendless = Backendless.sharedInstance()!
+    
+    //let backendless = Backendless.sharedInstance()!
     var dataStoreQuestionOfTheDay:IDataStore!
     var dataStoreOpinion:IDataStore!
     
@@ -38,17 +40,19 @@ class Statistician{
     
    func fetchQuestionOfTheDay()-> QuestionOfTheDay{
     let queryBuilder = DataQueryBuilder()
-    let question = self.dataStoreQuestionOfTheDay?.find(queryBuilder) as! QuestionOfTheDay
-    return question
+    let question = self.dataStoreQuestionOfTheDay?.find(queryBuilder) as! [QuestionOfTheDay]
+    return question[0]
   }
    
     func saveOpinion(opinion:Opinion){
        //let opinion = Opinion(question: QuestionOfTheDay, answer: Int)
-        let savedOpinion = dataStoreOpinion.save(opinion)
-        
+        dataStoreOpinion.save(opinion)
     }
     
     init(){
+        backendless.hostURL = SERVER_URL
+        backendless.initApp(APPLICATION_ID, apiKey: API_KEY)
+        
         dataStoreQuestionOfTheDay = backendless.data.of(QuestionOfTheDay.ofClass())
         dataStoreOpinion = backendless.data.of(Opinion.ofClass())
     }

@@ -19,6 +19,10 @@ class QuestionOfTheDay : NSObject {
     
     override init(){
         super.init()
+//        question = "How do you greet a person in French?"
+//        answer0 = "Hello"
+//        answer1 = "Goodbye"
+//        answer2 = "Bonjour"
     }
     init(question:String, answer0:String, answer1:String, answer2:String){
         self.question = question
